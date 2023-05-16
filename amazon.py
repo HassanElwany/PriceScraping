@@ -14,4 +14,4 @@ for product in products:
     price = r.html.find('.a-offscreen')[0].text.replace('SAR', '')
     title = r.html.find('#productTitle')[0].text
 
-    print(title, price)
+    print(f"{title}: Price is .. {price}")
